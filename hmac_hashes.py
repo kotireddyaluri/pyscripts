@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from hashlib import md5,sha1,sha256,sha512
+#the constants '0x5c' and '0x36' are defined by the spec
 trans_5C = "".join(chr(x ^ 0x5c) for x in xrange(256))
 trans_36 = "".join(chr(x ^ 0x36) for x in xrange(256))
 md5_blocksize = md5().block_size
