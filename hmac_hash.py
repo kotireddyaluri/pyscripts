@@ -7,7 +7,6 @@ sha1_blocksize = sha1().block_size
 sha256_blocksize = sha256().block_size
 
 print "https://en.wikipedia.org/wiki/HMAC#Implementation"
-#print "why these two chars-["+chr(0x5c)+chr(0x36)+"]?"
 
 def hmac_md5(key, msg):
     if len(key) > md5_blocksize:
